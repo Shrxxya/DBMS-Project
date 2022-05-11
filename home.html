@@ -1,0 +1,434 @@
+<html>
+    <head>
+        <title>ISVHCC - Home</title>
+        <link rel="icon" type="image/png" href="brand logo.png"/>
+      </head>
+
+           
+<style>
+.head{
+  background-image: url("green.jpg");
+}
+.bck {
+    background-image: url("dog.png");
+    background-size: 100%;
+    
+}
+.navbar {
+  overflow: hidden;
+  background-color: rgb(3, 107, 50);
+  width: auto;
+  height: 10%;
+  border-color: black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 24px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.slideshow-container {
+  size: 1000px;
+  position: relative;
+  margin: auto;
+
+
+}
+
+/* Hide the images by default */ 
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color:#ffffff;
+  font-size: 60px;
+  padding: 8px 12px;
+  position:absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align:left;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+h1{
+  background: -webkit-linear-gradient(#257755, rgb(255, 236, 65));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main{
+  font-size: 20;
+  }
+  .ser{
+    margin-right: 17%;
+    text-align: center;
+    font-size:250%;
+    background: -webkit-linear-gradient(#257755, rgb(255, 236, 65));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  
+  .content
+  {
+    text-align: center;
+    margin-left: 15%;
+  }
+  .column {
+  float: left;
+  width: 17%;
+  padding: 20px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row1::after {
+  
+  content: "";
+  clear: both;
+  display: table;
+}
+a {color: #257755;}
+   
+
+</style>
+       
+<body style="margin: 0px;"> 
+  <div class="head">
+    <a id="admin" href="adminLogin.html" style="margin-left: 92%; margin-top: 30%;"> AdminLogin </a>
+    <img src="brand logo.png" height="170" width="255" style="margin-left: 40%">
+    
+  </div>
+          
+  
+  <div class="navbar">
+    <a href="home.html"> Home </a>
+    <div class="dropdown">
+      <button class="dropbtn">About Us 
+        <i class="fa fa-caret-down"></i>
+      </button>
+
+      <div class="dropdown-content">
+        <a href="2041061_LabProg1.html"> About ISVHCC </a>
+        <a href="doctors.php"> Our Fleet of Doctors</a>
+
+      </div>
+    </div>  
+   <!-- <a href="2041061_LabProg1.html">About Us</a>-->
+    
+    <div class="dropdown">
+        <button class="dropbtn">Services 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        
+        <div class="dropdown-content">
+            <a href="IPD WEBPAGE.html">IPD</a>
+            <a href="opd.html">OPD</a>
+            <a href="services.html">Miscellaneous</a>
+            <a href="trainingNfirstaid.html">Training and First Aid</a>
+            <a href="adoption_page.html"> Adopt a Stray </a>
+            <a href="boarding_page.html"> Boarding </a>
+            <a href="laboratory.html"> Laboratory Tests</a>
+            <a href="cemetery.html"> Cemetery</a>
+
+          </div>
+    </div>
+        
+          <a href="volunteer.html"> Want To Help? </a>
+          <a href="2041061_LabProg5.html"> Donate </a>
+        <!---  <a href="doctors.php"> Our Fleet of Doctors </a>-->
+          <a href="home.html#contact"> Contact Us </a> 
+          
+          <div style="margin-left:80%">
+            <a href="2041061_LabProg6.html"> Login </a>
+            <a href="signuppage.html">SignUp</a>
+          </div>              
+        </div>  
+
+
+            <hr>
+<script>
+                
+                var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+var slideIndex = 0;
+carousel();
+
+
+</script>
+<script>
+  function autoscroll() {
+    document.getElementById( 'contact' ).scrollIntoView();    
+  }
+</script>
+            
+            
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="gaushala.jpg" style="width: 100%;">
+                  <div class="text">GAUSHALA</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="hospital.jpg" style="width:100%">
+                  <div class="text">ADOPT A STRAY</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="volunteer.png" style="width:100%">
+                  <div class="text">HELP US </div>
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+            <div class="bck">
+              
+              <div class="content">
+    <video controls loop autoplay muted width="30%" height="50%" style="float: right; clear: right; margin-right: 15%;">
+                  <source src="dog.mp4" type="video/mp4">
+                   </video>
+                   
+                <h1 >WELCOME TO INNOCENT <br>
+                    SOULS VETERINARY HOSPITAL <br>
+                    AND CARE CENTRE <br>
+                    <hr style="width: 35%; margin-right: 55%; height: 2px; background-color: #024922;">
+                  </h1>
+                  
+                 <p class = "main" >
+                  
+                     Innocent Souls Veterinary Hospital and Care Center is Bengaluru's <br>
+                     largest all-animal hospital, training, and boarding center with over  <br>
+                     40 acres of land. Here, we strive to accomodate 800+ animals at any <br>
+                     point of time. There are shelters of all kind of animals in the center <br>
+                     - big to small. We commit to give the best treatment to these <br>
+                     cute and adorable creatures with  oour best-in-class machines. <br>  
+                     
+                      </p>
+                      <br> <br> <br>
+                      <b><p class="ser">Our Services</p></b>
+                      
+                      </div>
+            <div class="row" style="position: absolute; margin-left:5%; height:100% ;width:100% ;">
+                        <div class="column">
+                          <a href="D:\4th Semester\DBMS PROJECT\IPD\IPD WEBPAGE.html">
+                          <img src="IPD.png" alt="Snow" style="width:100%">
+                          </a>
+                        </div>
+                        <div class="column">
+                          <a href="D:\4th Semester\DBMS PROJECT\OPD\HOME.html">
+                          <img src="opd.png" alt="Forest" style="width:100%">
+                          </a>
+                        </div>
+                        <div class="column">
+                          <img src="cem.png" alt="Mountains" style="width:100%">
+                        </div>
+                        <div class="column">
+                          <img src="lab.png" alt="Mountains" style="width:100%">
+                        </div>
+                      
+                      </div>
+                     <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>                      
+                      <div class="row1" style="position: absolute; margin-left: 15%; height:100% ;width:100% ;">
+                        <div class="column">
+                          <img src="icu.png" style="width:100%">
+                        </div>
+                        <div class="column">
+                          <img src="free.png"  style="width:100%">
+                        </div>
+                        <div class="column">
+                          <img src="ot.png"  style="width:100%">
+                        </div>
+                      </div> 
+                      
+                      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <hr>
+                <div id="contact"><h1 style="margin-left: 2%;">Contact Us</h1>
+                  <p style="font-size: 20;">
+                    <ul type="square" style="font-size: 18;">
+                        <li>Phone: 9899605423</li>
+                        <li>Phone: 8318475973</li>
+                        <li>E-mail ID: innocentsouls@gmail.com</li>
+                        <li>Ambulance Service: 0522-343232</li>
+                        <li>Ambulance Service: 0522-343233</li>                
+                    </ul>
+                </p>
+                </div>        
+            </div>
+            </body>
+            </html>
+            
+                    
+              
+
+              
+
+
+          

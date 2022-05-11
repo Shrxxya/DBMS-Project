@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <title>
+             Services          
+            </title>
+            <link rel="icon" type="image/png" href="brandlogo.png"/>
+           </head>
+           <style>
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(3, 107, 50);
+  width: auto;
+  height: 9%;
+  border-color: black;
+  
+  top:180;
+}
+
+.navbar a {
+  float: left;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 24px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.head{
+    background-image: url(greenBg.jpg);
+}
+body{
+    margin: 0;
+    
+}
+.heading {
+    color: rgb(255, 255, 255);
+    font-size: 86;
+    margin-top: -6.5%;
+    background-image: linear-gradient( rgb(157, 252, 128),rgb(45, 156, 1));
+}
+input {
+  width: 15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  background-color: rgb(3,107, 50);
+}
+.ab{
+  background-image: url(love.png);
+  margin-top: -3.2%;
+  background-size: 100%;
+}
+
+</style>
+<body>
+    <div class="head">
+        <img src="brand logo.png" height="170" width="255">
+      </div>
+      <div class="navbar">
+        <a href="home.html"> Home </a>
+        <div class="dropdown">
+          <button class="dropbtn">About Us 
+            <i class="fa fa-caret-down"></i>
+          </button>
+
+          <div class="dropdown-content">
+            <a href="2041061_LabProg1.html"> About ISVHCC </a>
+            <a href="doctors.php"> Our Fleet of Doctors</a>
+
+          </div>
+        </div>  
+       <!-- <a href="2041061_LabProg1.html">About Us</a>-->
+        
+        <div class="dropdown">
+            <button class="dropbtn">Services 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            
+            <div class="dropdown-content">
+                <a href="IPD WEBPAGE.html">IPD</a>
+                <a href="opd.html">OPD</a>
+                <a href="services.html">Miscellaneous</a>
+                <a href="trainingNfirstaid.html">Training and First Aid</a>
+                <a href="adoption_page.html"> Adopt a Stray </a>
+                <a href="boarding_page.html"> Boarding </a>
+                <a href="laboratory.html"> Laboratory Tests</a>
+                <a href="cemetery.html"> Cemetery</a>
+
+              </div>
+        </div>
+            
+              <a href="volunteer.html"> Want To Help? </a>
+              <a href="2041061_LabProg5.html"> Donate </a>
+            <!---  <a href="doctors.php"> Our Fleet of Doctors </a>-->
+              <a href="home.html#contact"> Contact Us </a> 
+              
+              <div style="margin-left:80%">
+                <a href="2041061_LabProg6.html"> Login </a>
+                <a href="signuppage.html">SignUp</a>
+              </div>              
+            </div>
+              <div class="heading">
+            <center><p> Animal Cemetery
+              <hr style="margin-top: -5%;"> </p>
+              <p style="font-size: 30; margin-top: -5%;"> <i>"If having a soul means being able to feel love <br>
+              and loyalty and gratitude, then animals are <br>
+              better off than a lot of humans." <br>  James Herriot</i> </p> </center> 
+              <hr style="margin-top: -1.5%;">
+              </div>
+              <div class="ab">
+               <center><p style="margin-top: -2.5%; font-size: larger;"> 
+
+                At ISVHCC, we understand the grief of losing a companion animal and offer one of Delhi's<br>
+                only burial grounds for animals. Graves are freshly dug and the animal laid to rest in<br>
+                the presence of the owner.A fee is charged for this service. Space allowing, ISVHCC plans <br>
+                to offer saplings to owners to plant in memory of their companion animal.<br><br>
+
+                The donation helps us give free treatment to needy animals and<br> 
+                you and your pet grants a new lease of life to other animals.<br><br>
+                
+                We also encourage you to adopt another animal. The best way to remember your pet <br> 
+                is to open your heart and home to another and relive the joy of sharing and caring. <br>
+                When you are ready to adopt another animal, ISVHCC is glad to help you choose <br>
+                from among its many animals. A homeless animal would get a good home and you'd <br>
+                 get a best friend for free.</p> </center>
+                 
+                 <form name="cemetery" style="text-align: center;" method="post" action="cemetery1.php">
+        
+                  <label for="Customer id "> Customer ID </label> <br>
+                  <input type="number" id="custid" name="custid" pattern="[0-9]{1,5}"> <br>
+                  <label for="name"> Name </label> <br>
+                  <input type="text" id="name" name="name" pattern="[A-Za-z]{1,30}"> <br>
+                  <label for="Species"> Species </label> <br>
+                  <input type="text" id="Species" name="Species" pattern="[A-Za-z]{1,12}"> <br>
+                  <label for="date"> Date of Burial </label> <br>
+                  <input type="date" min="2022-01-01" max="2022-12-31" id="bdate" name="bdate"> <br>
+                  <input type="submit" value="Submit"> <br>
+                 </div> 
+          
+            </form>
+                </div>            
+
+              </body>

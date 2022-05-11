@@ -1,0 +1,288 @@
+<html>
+    <head>
+        <title>ISVHACC - Donation</title>
+        <link rel="icon" type="image/png" href="brand logo.png"/>
+        <img align="left" src="brand logo.png" alt="official logo" width="100" height="80">
+        <h1 style="color: #2c8862;">Innocent Souls Veterinary Hospital and Care Centre</h1>
+        <style>
+            form {
+            width: 50%;
+            border: 3px solid #f1f1f1;
+            text-align: center;
+            display: inline-block;
+        }
+        input[type=text], input[type=number], input[type=date]{
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #2c8862;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+        button {
+            background-color: #04AA6D;
+            color: #04AA6D;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type=submit]{
+            background-color: #04AA6D;
+            color: black;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border:#04AA6D;
+            border-width: 25ch;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 20%;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        input[type=text]:focus {
+            border: 3px solid #555;
+        }
+            .navbar {
+  overflow: hidden;
+  background-color: rgb(3, 107, 50);
+  width: auto;
+  height: 10%;
+  border-color: black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+h2{
+    margin-left: 2%;
+}
+.dropdown .dropbtn {
+  font-size: 24px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.abc{
+    font-size: 18;
+    margin-left: 2%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+            body{
+            background-image: url(imageedit_3_4754808910.png);
+            background-size: 100%;
+        }
+        </style>
+    </head>
+    <body>
+        <br/><br>
+        <div class="navbar">
+        <a href="home.html"> Home </a>
+        <div class="dropdown">
+          <button class="dropbtn">About Us 
+            <i class="fa fa-caret-down"></i>
+          </button>
+
+          <div class="dropdown-content">
+            <a href="2041061_LabProg1.html"> About ISVHCC </a>
+            <a href="doctors.php"> Our Fleet of Doctors</a>
+
+          </div>
+        </div>  
+       <!-- <a href="2041061_LabProg1.html">About Us</a>-->
+        
+        <div class="dropdown">
+            <button class="dropbtn">Services 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            
+            <div class="dropdown-content">
+                <a href="IPD WEBPAGE.html">IPD</a>
+                <a href="opd.html">OPD</a>
+                <a href="services.html">Miscellaneous</a>
+                <a href="trainingNfirstaid.html">Training and First Aid</a>
+                <a href="adoption_page.html"> Adopt a Stray </a>
+                <a href="boarding_page.html"> Boarding </a>
+                <a href="laboratory.html"> Laboratory Tests</a>
+                <a href="cemetery.html"> Cemetery</a>
+
+              </div>
+        </div>
+            
+              <a href="volunteer.html"> Want To Help? </a>
+              <a href="2041061_LabProg5.html"> Donate </a>
+            <!---  <a href="doctors.php"> Our Fleet of Doctors </a>-->
+              <a href="home.html#contact"> Contact Us </a> 
+              
+              <div style="margin-left:80%">
+                <a href="2041061_LabProg6.html"> Login </a>
+                <a href="signuppage.html">SignUp</a>
+              </div>              
+            </div><br>
+            <h1 style="text-align: center; color: #f18043;">DONATION</h1>
+    
+        <center><img src="catndog.jpg" width="600" height="400" alt="Cat and Dog"></center>
+        <br/>
+        <div class="abc">
+        <script type="text/javascript">
+            var d = new Date();
+            var time = d.getHours();
+            if (time < 12)
+            {
+            document.write("<br/><br/>Good morning,");
+            }
+            else if(time<17)
+            {
+                document.write("<br/><br/>Good afternoon,")
+            }
+            else
+            {
+                document.write("<br/><br/>Good evening,");
+            }
+        </script>
+        </div>
+        <script>
+            function phonenumber(inputtxt)
+            {
+                var phoneno = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+                if(inputtxt.length=10 && phoneno.test(inputtxt))
+                {
+                    return true;
+                }
+                else
+                {
+                    alert("Please enter valid phone number");
+                    return false;
+                }
+            }
+            function validateForm() {
+                var b, pnum;
+                pnum=document.forms["myForm"]["pno"].value;
+                b=phonenumber(pnum);
+                var x = document.forms["myForm"]["fname"].value;
+                var y=document.forms["myForm"]["pno"].value;
+                var z=document.forms["myForm"]["amt"].value;
+                if (x == null || x == "") {
+                alert("Please enter your name");
+                return false;
+                }
+                else if (y == null || y == "") {
+                alert("Please enter your contact number");
+                return false;
+                }
+                else if (z == null || z == "") {
+                alert("Please enter the amount you wish to donate");
+                return false;
+                }
+                else if (b==false){
+                    return false;
+                }
+            }
+            function focusevent1()
+            {   
+                document.getElementById("input1").style.background=" #eef279";
+            }
+            function focusevent2()
+            {   
+                document.getElementById("input2").style.background=" #eef279";
+            }
+            function focusevent3()
+            {   
+                document.getElementById("input3").style.background=" #eef279";
+            }
+            function focusevent4()
+            {   
+                document.getElementById("input4").style.background=" #eef279";
+            }
+        </script>
+        <div class="abc">
+        <p>Thank you for choosing to extend a helping hand in our endeavor to cater for the needy animals around us. Your generous donation will go a long way in helping these voiceless souls. <br/>
+            <br/>Follow the steps given below to donate: </p>
+        <script>
+            arr = new Array("1. Go to the form", "2. Enter your personal details", "3. Enter the amount to be donated", "4. Specify if you would like to donate in installments", "5. We will apply tax and show you the final value", "6. Click on submit");
+            var i;
+            for (i=0; i<arr.length; i++)
+                document.write(arr[i]+"<br>");
+        </script>  
+        </div> 
+        <script>
+            function trial(){
+                var baseamt=0.0;
+                var amt=document.forms["myForm"]["amt"].value;
+                var inst=document.forms["myForm"]["install"].value;
+                baseamt=amt/inst;
+                document.getElementById("ismt").innerHTML="<br>Installments per month : Rs. "+baseamt;
+                var tax=0.10;
+                var tot=baseamt*tax;
+                var final=baseamt+Math.ceil(tot);
+                var str=new String ("Total Amount to be paid this month (after taxes): Rs. ");
+                document.getElementById("taxes").innerHTML=str+final;
+            }
+            function last(){
+                alert("Donation request submitted successfully");
+            }
+        </script>
+        <p style="border:#f18043; border-width:1px; border-style:solid; text-align: center;">
+            <div class="abc" style="text-align: center;">
+            <form name ="myForm" action="donation.php"
+            onsubmit="validateForm()" method="post" style="text-align: center;" id="donationForm">
+            Name: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="input2" name="fname" onfocus="focusevent2()" pattern="[A-Za-z]{1,30}"><br/><br/>
+            Phone No: <input type="text" id="input1" name="pno" onfocus="focusevent1()" pattern="[0-9]{1,12}"><br/><br/>
+            Amount: <input type="number" id="input3" name="amt" onfocus="focusevent3()" pattern="[0-9]{1,9}"><br/><br/>
+            <p id="ismt"></p>
+            <p id="taxes"></p>
+            <br/><br/><input type="submit" value="Submit" onclick="last()">
+            </form>
+            <br>
+        </div>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/png" href="brand logo.png"/>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:url("dogbg1.png");
+  background-size: 200ch 120ch;
+  }
+  input {
+  width: 15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  background-color: #2c8852b2;
+}
+input[type=submit]{
+            background-color: #04AA6D;
+            color: black;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border:#04AA6D;
+            border-width: 25ch;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 10%;
+        }
+  .navbar {
+  overflow: hidden;
+  background-color: rgb(3, 107, 50);
+  width: auto;
+  height: 10%;
+  border-color: black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<img src="brand logo.png" height="170" width="255" style="margin-left: 40%">
+<div class="navbar">
+  <a href="home.html"> Home </a>
+  <div class="dropdown">
+    <button class="dropbtn">About Us 
+      <i class="fa fa-caret-down"></i>
+    </button>
+
+    <div class="dropdown-content">
+      <a href="2041061_LabProg1.html"> About ISVHCC </a>
+      <a href="doctors.php"> Our Fleet of Doctors</a>
+
+    </div>
+  </div>  
+ <!-- <a href="2041061_LabProg1.html">About Us</a>-->
+  
+  <div class="dropdown">
+      <button class="dropbtn">Services 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      
+      <div class="dropdown-content">
+          <a href="IPD WEBPAGE.html">IPD</a>
+          <a href="opd.html">OPD</a>
+          <a href="services.html">Miscellaneous</a>
+          <a href="trainingNfirstaid.html">Training and First Aid</a>
+          <a href="adoption_page.html"> Adopt a Stray </a>
+          <a href="boarding_page.html"> Boarding </a>
+          <a href="laboratory.html"> Laboratory Tests</a>
+          <a href="cemetery.html"> Cemetery</a>
+
+        </div>
+  </div>
+      
+        <a href="volunteer.html"> Want To Help? </a>
+        <a href="2041061_LabProg5.html"> Donate </a>
+      <!---  <a href="doctors.php"> Our Fleet of Doctors </a>-->
+        <a href="home.html#contact"> Contact Us </a> 
+        
+        <div style="margin-left:80%">
+          <a href="2041061_LabProg6.html"> Login </a>
+          <a href="signuppage.html">SignUp</a>
+        </div>              
+      </div>
+<p><center><img src="ipdimg.png"></center></p>
+<p style="margin-left: 10%;">Our in-patient department houses over 3000 animals at any given point. These include dogs, cats, cattle, monkeys,<br>
+  rabbits, birds, goats, sheep, camels, donkeys, horses and more. They are further divided into large and <br>
+  small animal departments. Each one has a separate ICU and maternity section <br> <br> 
+  Dogs are further segregated based on the nature of their illness. The cattle are sub-divided into cows and 
+  buffaloes. <br> The birds into birds of prey, other birds, water birds, small birds. <br> <br>
+  They receive treatment daily, and cases brought by ISHVHCC's ambulance service are also treated and homed in the IPD. <br>
+  People who cannot afford to pay treatment charges for animals are receive free treatment and temporary hospitalisation <br> 
+  for their animals in the IPD. <br> <br>
+  ISVHCC endeavours to provide a balanced, nutritious diet for all its animals with a healthy mix of carbohydrates, proteins, fats, vitamins <br> 
+  and minerals. The cattle get straw and green fodder mixed with choker, churi, gur and salt licks. <br>
+  The cats and dogs receive dalia, bread, milk, rusk, occasionally eggs, or meat received from hotel leftovers, vegetables, rice, bread, <br> 
+  soyabean. Rabbits and birds get fresh fruit and vegetables, monkeys get rotis and fruit while ducks and peacocks get grain and fresh greens.
+</p> <br> <br>
+<hr>
+<center><h1> REGISTER PATIENT FOR IPD </h1> </center> 
+<form style="text-align: center;" action="ipd.php" method="POST">
+        
+        <label for="Customer id "> Customer ID </label> <br>
+        <input type="number" id="custid" name="custid" pattern="[0-9]{1,5}"> <br>
+        <label for="name"> Name </label> <br>
+        <input type="text" id="name" name="name" pattern="[A-Za-z]{1,30}"> <br>
+        <label for="Species"> Species </label> <br>
+        <input type="text" id="species" name="species" pattern="[A-Za-z]{1,12}"> <br>
+        <label for="DOA"> Date of Admission </label> <br>
+        <input type="date" min="2022-01-01" max="2022-12-31" id="doa" name="doa"> <br>
+        <input type="submit" value="Submit"> <br>
+
+  </form>
+
+</body>
+</html>

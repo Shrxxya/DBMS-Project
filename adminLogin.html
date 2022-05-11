@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>ISVHCC - Admin</title>
+        <link rel="icon" type="image/png" href="brand logo.png"/>
+        <img align="left" src="brand logo.png" alt="official logo" width="110" height="90">
+        <h1 style="color: #2c8862;">Innocent Souls Veterinary Hospital and Care Centre</h1>
+        <style>
+            body{
+            background-image: url(dogcat.png);
+            background-size: 100%;
+        }
+        form {
+            width: 50%;
+            border: 3px solid #f1f1f1;
+            text-align: center;
+            display: inline-block;
+        }
+        input[type=text], input[type=password] {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #2c8862;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+        button {
+            background-color: #04AA6D;
+            color: #04AA6D;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type=submit]{
+            background-color: #04AA6D;
+            color: black;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border:#04AA6D;
+            border-width: 25ch;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 20%;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        input[type=text]:focus {
+            border: 3px solid #555;
+        }
+        a {
+            color: #216e4e;;
+        }
+        </style>
+    </head>
+    <body>
+        <br/><br/>
+        <img src="Screenshot__409_-removebg-preview.png" align="left">
+        <p>  
+        <script>
+            function validateForm() {
+                var x = document.forms["myForm"]["userid"].value;
+                var y=document.forms["myForm"]["userpwd"].value;
+                if (x == null || x == "") {
+                alert("Please enter your Login ID");
+                return false;
+                }
+                else if (y == null || y == "") {
+                alert("Please enter your password");
+                return false;
+                }
+                else
+                alert("Logged In");
+            }
+            function focusevent1()
+            {   
+                document.getElementById("input1").style.background="#d9fcfc";
+            }
+            function focusevent2()
+            {   
+                document.getElementById("input2").style.background="#d9fcfc";
+            }
+        </script>    
+        <div style="text-align: center;">    
+            <form name ="myForm" action="adminConn.php"
+            onsubmit="validateForm()" method="post" style="text-align: center;" id="donationForm">
+            <br><b>Username</b><br/><br/>
+            <input type="text" value="Username" name="userid" id= "input1" onfocus="focusevent1()" pattern="[A-Za-z0-9]{1,10}"><br/><br/>
+            <b>Password</b><br/><br/>
+            <input type="password" value="password" name="userpwd" id= "input1" onfocus="focusevent1()">
+            <br/><br/><input type="submit" value="Submit">
+            <br/><br/>
+            </form>
+            <br>
+        </div>
+        </p>
+    </body>
+</html>

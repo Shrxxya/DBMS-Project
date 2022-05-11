@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>Innocent Souls Veterinary Hospital and Care Centre - SignUp</title>
+        <img align="left" src="brand logo.png" alt="official logo" width="100" height="80">
+        <h1 style="color: #2c8862;">Innocent Souls Veterinary Hospital and Care Centre</h1>
+        <style>
+            body{
+            background-image: url(bgimg.jpg);
+        }
+        form {
+            width: 50%;
+            border: 3px solid #f1f1f1;
+            text-align: center;
+            display: inline-block;
+        }
+        input[type=text], input[type=password] {
+            width: 40%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #2c8862;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+        input[type=number], input[type=password], input[type=email] {
+            width: 40%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #2c8862;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+        input[type=submit]{
+            background-color: #04AA6D;
+            color: black;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border:#04AA6D;
+            border-width: 25ch;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 20%;
+        }
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        input[type=text]:focus {
+            border: 3px solid #555;
+        }
+        a {
+            color: #216e4e;;
+        }
+        div{
+            text-align: center;
+        }
+        .part{
+            position: absolute;
+width: 464px;
+height: 17px;
+left: 700px;
+top: 600px;
+
+font-family: Lato;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <br/><br/>   
+        <img src="Screenshot__414_-removebg-preview.png" align="left" width="335" height="480">
+        <script>
+            function validateForm() {
+                var u = document.forms["myForm"]["name"].value;
+                var v=document.forms["myForm"]["pno"].value;
+                var w=document.forms["myForm"]["address"].value;
+                var x=document.forms["myForm"]["email"].value;
+                var y=document.forms["myForm"]["pwd"].value;
+                var z=document.forms["myForm"]["confpwd"].value;
+                if (u == null || u == "") {
+                alert("Please enter your Name");
+                return false;
+                }
+                else if (v == null || v == "") {
+                alert("Please enter your Phone Number");
+                return false;
+                }
+                else if (w == null || w == "") {
+                alert("Please enter your Address");
+                return false;
+                }
+                else if (x == null || x == "") {
+                alert("Please enter your Email ID");
+                return false;
+                }
+                else if (y == null || y == "") {
+                alert("Please enter your Password");
+                return false;
+                }
+                else if (z == null || z == "") {
+                alert("Please enter your password again");
+                return false;
+                }
+                else if (z != y) {
+                alert("Please enter the correct password");
+                return false;
+                }
+                else{
+                    function last(){
+                    alert("Login Successful!");
+                    window.location.href="home.html";
+            }
+                }
+            }
+        </script>
+        <p>    
+        <div style="text-align: center; box-sizing: border-box;">
+            <form name ="myForm" action="signup.php" method="POST"
+            onsubmit="validateForm()" style="text-align: center;" id="donationForm">
+            <br><b>Name</b> &nbsp&nbsp&nbsp&nbsp<input type="text" name="name" pattern="[A-Za-z]{1,30}"><br/>
+            <b>Gender</b> &nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="gender" value="M">Male &nbsp&nbsp&nbsp&nbsp<input type="radio" name="gender" value="F">Female &nbsp&nbsp&nbsp&nbsp<input type="radio" name="gender" value="O"> Other<br>
+            <b>Phone No</b>&nbsp&nbsp&nbsp&nbsp<input type="number" name="pno" pattern="[0-9]{1,12}"><br/>
+            <b>Address</b>&nbsp&nbsp&nbsp&nbsp<input type="text" name="address"><br/>
+            <b>E-mail ID</b>&nbsp&nbsp&nbsp&nbsp<input type="email" name="email" pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}"><br/>
+            <b>Password</b>&nbsp&nbsp&nbsp&nbsp<input type="text" name="pwd"><br/>
+            <b>Confirm Password</b>&nbsp&nbsp&nbsp&nbsp<input type="password" name="confpwd"><br/>
+            <br/><input type="submit" value="Submit" onclick="last()">
+            </form>
+            <p class="part" style="color: #4b4f4c;">Already have an account?&nbsp
+            <a href="2041061_LabProg6.html">Log In</a></p>
+        </div>
+        </p>
+    </body>
+</html>

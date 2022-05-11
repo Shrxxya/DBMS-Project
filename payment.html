@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Payment Gateway</title>
+	<link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="brandlogo.png"/>
+</head>
+<body >
+
+<div class="wrapper">
+  <div class="checkout_wrapper">
+    <div class="product_info">
+      <img src="donation.jpg" alt="product" style="height: 220px; width: 200px;">
+      <div class="content">
+        <h3>DONATION</h3>
+        
+      </div>
+    </div>
+    <div class="checkout_form">
+      <p>Payment Details</p>
+      <div class="details">
+        <div class="section">
+          <input type="text" placeholder="Card Number" name="cardno">
+        </div>
+        <div class="section">
+          <input type="text" placeholder="Cardholder Name" name="name">
+        </div>
+        <div class="section last_section">
+          <div class="item">
+            <input type="date" placeholder="Expiry Date" name="exdate">
+          </div>
+          <div class="item">
+            <input type="password" placeholder="CVV" name="cvv">
+          </div>
+        </div>
+        
+        <div class="btn">
+          <button onclick="myFunction()">PAY</button>
+
+<script>
+function myFunction() {
+  var val = document.querySelector('input').value;
+  if (val == null || val == "") {
+    alert("Please ensure you have filled all details");
+    return false;
+  }
+  /*
+  var w = document.forms["myForm"]["cardno"].value;
+  var x=document.forms["myForm"]["name"].value;
+  var y=document.forms["myForm"]["exdate"].value;
+  var z=document.forms["myForm"]["cvv"].value;
+  if (w == null || w == "") {
+    alert("Please enter your card number");
+    return false;
+  }
+  else if (x == null || x == "") {
+    alert("Please enter the name of cardholder");
+    return false;
+  }
+  else if (y == null || y == "") {
+    alert("Please enter the expiry date of card");
+    return false;
+  }
+  else if (z == null || z == "") {
+    alert("Please enter your cvv number");
+    return false;
+  }*/
+  else
+    alert("Payment successful!");
+    window.location.href = "2041061_LabProg5.html";
+  }
+</script>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

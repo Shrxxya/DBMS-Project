@@ -1,0 +1,215 @@
+<html>
+    <head>
+        <title>ISVHCC-Adoption</title>
+        <link rel="icon" type="image/png" href="brand logo.png"/>
+        <img align="left" src="brand logo.png" alt="official logo" width="100" height="80">
+        <h1 style="color: #2c8862;">&nbsp&nbsp&nbspInnocent Souls Veterinary Hospital and Care Centre</h1>
+        <style>
+          form {
+            width: 50%;
+            border: 3px solid #f1f1f1;
+            text-align: center;
+            display: inline-block;
+        }
+        input[type=text], input[type=password], input[type=date]{
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #2c8862;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+        button {
+            background-color: #04AA6D;
+            color: #04AA6D;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type=submit]{
+            background-color: #04AA6D;
+            color: black;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border:#04AA6D;
+            border-width: 25ch;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 20%;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        input[type=text]:focus {
+            border: 3px solid #555;
+        }
+            .navbar {
+  overflow: hidden;
+  background-color: rgb(3, 107, 50);
+  width: auto;
+  height: 10%;
+  border-color: black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+h2{
+    margin-left: 2%;
+}
+.dropdown .dropbtn {
+  font-size: 24px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+            body{
+            background-size: 100%;
+        }
+        </style>
+    </head>
+    <body style="background-image: url(imageedit_1_4150977216.png);"><br><br>
+      <div class="navbar">
+        <a href="home.html"> Home </a>
+        <div class="dropdown">
+          <button class="dropbtn">About Us 
+            <i class="fa fa-caret-down"></i>
+          </button>
+
+          <div class="dropdown-content">
+            <a href="2041061_LabProg1.html"> About ISVHCC </a>
+            <a href="doctors.php"> Our Fleet of Doctors</a>
+
+          </div>
+        </div>  
+       <!-- <a href="2041061_LabProg1.html">About Us</a>-->
+        
+        <div class="dropdown">
+            <button class="dropbtn">Services 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            
+            <div class="dropdown-content">
+                <a href="IPD WEBPAGE.html">IPD</a>
+                <a href="opd.html">OPD</a>
+                <a href="services.html">Miscellaneous</a>
+                <a href="trainingNfirstaid.html">Training and First Aid</a>
+                <a href="adoption_page.html"> Adopt a Stray </a>
+                <a href="boarding_page.html"> Boarding </a>
+                <a href="laboratory.html"> Laboratory Tests</a>
+                <a href="cemetery.html"> Cemetery</a>
+
+              </div>
+        </div>
+            
+              <a href="volunteer.html"> Want To Help? </a>
+              <a href="2041061_LabProg5.html"> Donate </a>
+            <!---  <a href="doctors.php"> Our Fleet of Doctors </a>-->
+              <a href="home.html#contact"> Contact Us </a> 
+              
+              <div style="margin-left:80%">
+                <a href="2041061_LabProg6.html"> Login </a>
+                <a href="signuppage.html">SignUp</a>
+              </div>              
+            </div>
+        <br/><br/>
+        <h1 style="color: teal; text-align: center;"><b>ADOPTION</b></h1>
+    <p style="text-align: center;"><img align="centre" src="adoption.jpg" width="600" height="350"></p>
+        <br><p style="margin-left: 18; margin-right: 18;"><b>Innocent Souls Veterinary Hospital And Care Centre offers people the choice to adopt a stray animal from our shelter.</b> People can now adopt a stray animal from our shelter in 5 easy steps :</p>
+        <p><ol><li>Visit our shelter</li><li>Bond with a stray</li><li>Secure medical records</li><li>Follow official adoption guidelines and fill up the paperwork</li><li>Take your new pet home!</li></ol></p>
+        <p style="margin-left: 18; margin-right: 18;">Every animal deserves love and our stray shelter houses some very cute, innocent souls that are in need of a loving home. If you feel you have what it takes to be a pet parent, and you are willing to be responsible for a voiceless soul, fill the form given below.</p>
+        <br>
+        <script>
+          function validateForm() {
+              var x = document.forms["myForm"]["name"].value;
+              var y=document.forms["myForm"]["breed"].value;
+              var z=document.forms["myForm"]["species"].value;
+              if (x == null || x == "") {
+              alert("Please enter the name of the animal");
+              return false;
+              }
+              else if (y == null || y == "") {
+              alert("Please enter the breed of the animal");
+              return false;
+              }
+              else if (z == null || z == "") {
+              alert("Please enter the species of the animal");
+              return false;
+              }
+              else
+              document.getElementById("msg").innerHTML = "Logged In";
+          }
+          function focusevent1()
+          {   
+              document.getElementById("input1").style.background="#d9fcfc";
+          }
+          function focusevent2()
+          {   
+              document.getElementById("input2").style.background="#d9fcfc";
+          }
+      </script>
+        <div style="text-align: center;">    
+          <form name ="myForm"  action="adoption.php" method="POST"
+          onsubmit="validateForm()" style="text-align: center;" id="donationForm">
+          <br><b>Name of animal</b><br/><br/>
+          <input type="text" name="name"  id= "input1" onfocus="focusevent1()" pattern="[A-Za-z]{1,30}"><br/><br/>
+          <br><b>Breed</b><br/><br/>
+          <input type="text" name="breed"  id= "input1" onfocus="focusevent1()" pattern="[A-Za-z]{1,20}"><br/><br/>
+          <b>Species</b><br/><br/>
+          <input type="text" name="species"  id= "input1" onfocus="focusevent1()" pattern="[A-Za-z]{1,12}">
+          <br/><br/><input type="submit" value="Submit">
+          <br/><br/>
+          </form>
+          </div>
+        <br/>
+        <p>To refer the adoption policy document and animal adoption contract click <a href="adoptionPolicy.html">here</a>.</p>
+    </body>
+</html>
